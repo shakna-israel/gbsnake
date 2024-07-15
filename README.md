@@ -4,6 +4,10 @@ A cleanroom implementation of the classic "snake", in Lua, for the GameBoy Advan
 
 ---
 
+![Screenshot of snake running](screenshot.jpg)
+
+---
+
 ## Build
 
 Run:
@@ -11,6 +15,8 @@ Run:
 	lua5.3 build.lua
 
 This will create the file `James Snake.gba`, which you can hand to your emulator or flash to a cart, etc.
+
+Based on [BPCore-Engine](https://github.com/evanbowman/BPCore-Engine).
 
 ---
 
