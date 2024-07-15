@@ -1,14 +1,15 @@
 
 local app = {
-   name = "NewProject",
+   name = "James Snake",
 
    tilesets = {
       "overlay/overlay.bmp",
-      "tiles/tilesheet.bmp",
+      --"tiles/tilesheet.bmp",
+      --"test.bmp",
    },
 
    spritesheets = {
-      "sprites/spritesheet.bmp",
+      --"sprites/spritesheet.bmp",
    },
 
    audio = {
