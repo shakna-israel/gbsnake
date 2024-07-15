@@ -1,11 +1,29 @@
-# bpcore-project-template
+# gbsnake
 
-A project template for games using https://github.com/evanbowman/BPCore-Engine.
+A cleanroom implementation of the classic "snake", in Lua, for the GameBoy Advance.
 
-Add your code in main.lua. Add graphics by editing the tilesheets in the tiles/, sprites/, and overlay/ directories.
+---
 
-I've sized each tilesheet and spritesheet to the maximum size supported by the engine. You can of course use multiple different images, and swap them as needed with the `txtr()` function. Add any new images to the manifest.lua file.
+## Build
 
-The build script treats RGB(0xff, 0, 0xff) as a transparent color, so the image files contain a pinkish hue. You may use up to 15 other colors per image file.
+Run:
 
-To build your project, simply run build.lua in the top level directory. The only dependency is an installation of lua 5.3.
+	lua5.3 build.lua
+
+This will create the file `James Snake.gba`, which you can hand to your emulator or flash to a cart, etc.
+
+---
+
+## License
+
+Copyright 2024 James Milne
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
